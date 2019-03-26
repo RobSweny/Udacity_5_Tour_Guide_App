@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dublin_street_tab1_background">
+
+    <TextView
+        android:id="@+id/dublin_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/proceed_button"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:shadowDx="10"
+        android:shadowColor="@color/white"
+        android:text="Lets take a\nlook at\nDublin!"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        android:fontFamily="@font/permanent_marker"/>
+
+
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/button_circle"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Proceed"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
