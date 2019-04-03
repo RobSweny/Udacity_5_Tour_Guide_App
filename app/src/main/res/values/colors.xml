@@ -5,6 +5,7 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="dark_grey">#333333</color>
+    <color name="light_grey">#666666</color>
     <color name="trans_dark_grey">#CC333333</color>
     <color name="orange">#E85D48</color>
     <color name="dark_blue">#4D00FF</color>
