@@ -3,7 +3,7 @@
     android:interpolator="@android:anim/bounce_interpolator">
     <translate
         android:duration="800"
-        android:fromYDelta="-20%p"
+        android:fromYDelta="-10%p"
         android:toYDelta="0"
         />
 </set>

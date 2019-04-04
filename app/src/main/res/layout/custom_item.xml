@@ -4,9 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/custom_item"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="15dp"
     android:layout_marginStart="@dimen/cardview_left_right"
     android:layout_marginLeft="@dimen/cardview_left_right"
     android:layout_marginEnd="@dimen/cardview_left_right"
@@ -20,7 +20,7 @@
 
     <RelativeLayout
         android:id="@+id/relative_card_layout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
 
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:scaleType="centerInside"
+            android:scaleType="fitCenter"
             android:src="@drawable/rectangle" />
 
         <TextView
@@ -45,9 +45,13 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:textColor="@color/white"
-            android:textSize="30sp"
+            android:textSize="35sp"
             android:textStyle="bold"
-            tools:text="Pub Name" />
+            tools:text="Pub Name"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"/>
 
         <TextView
             android:id="@+id/location_textview"
@@ -57,24 +61,13 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="35dp"
+            android:padding="15dp"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            tools:text="pub location" />
-
-        <TextView
-            android:id="@+id/item_description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:paddingBottom="20dp"
-            android:visibility="gone"
-            tools:text="description goes here this is a test a test a test a test a test a test" />
+            android:textSize="15sp"
+            tools:text="pub location"
+            android:shadowColor="@color/black"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"/>
     </RelativeLayout>
 </android.support.v7.widget.CardView>

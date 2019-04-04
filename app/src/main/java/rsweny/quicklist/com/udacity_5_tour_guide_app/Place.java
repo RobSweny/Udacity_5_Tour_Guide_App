@@ -6,12 +6,14 @@ public class Place {
 
     public String placeName;
     public String placeLocation;
+    public String placeDescription;
     public int placeImage;
 
-    public Place(String placeName, String placeLocation, int placeImage) {
+    public Place(String placeName, String placeLocation, int placeImage, String placeDescription) {
         this.placeName = placeName;
         this.placeLocation = placeLocation;
         this.placeImage = placeImage;
+        this.placeDescription = placeDescription;
     }
 
     public String getPlaceName() {
@@ -20,6 +22,14 @@ public class Place {
 
     public void setPlaceName(String placeName) {
         this.placeName = placeName;
+    }
+
+    public String getPlaceDescription() {
+        return placeDescription;
+    }
+
+    public void setPlaceDescription(String placeDescription) {
+        this.placeDescription = placeDescription;
     }
 
     public String getPlaceLocation() {
