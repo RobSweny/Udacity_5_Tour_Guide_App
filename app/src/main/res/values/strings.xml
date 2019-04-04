@@ -5,4 +5,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lets_take_a_nlook_at_ndublin">Lets take a look at Dublin!</string>
     <string name="proceed">Proceed</string>
+    <string name="location_name">Location name</string>
+    <string name="place_name">Place name</string>
+    <string name="description">Description</string>
+    <string name="back">Back</string>
+    <string name="image_for_pub_or_restaurant">image for pub or restaurant</string>
+    <string name="image_of_pub_or_restaurant">Image of pub or restaurant</string>
 </resources>

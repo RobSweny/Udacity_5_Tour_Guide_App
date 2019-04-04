@@ -122,13 +122,13 @@ public class ItemSelected extends AppCompatActivity {
 
     // Loads pubs
     private void loadPubs() {
-        placesList.add(new Place("After Earth", "2013", 0, "This is the description"));
-        placesList.add(new Place("Baby Driver", "2017", 1, "This is the description"));
-        placesList.add(new Place("After Earth", "2013", 2, "This is the description"));
-        placesList.add(new Place("Baby Driver", "2017", 3, "This is the description"));
-        placesList.add(new Place("After Earth", "2013", 4, "This is the description"));
-        placesList.add(new Place("Baby Driver", "2017", 5, "This is the description"));
-        placesList.add(new Place("Baby Driver", "2017", 6, "This is the description"));
+        placesList.add(new Place("Doheny & Nesbitt", "Baggot Street Lower", 0, "This classic pub houses 2 fine old snugs (small rooms for women in days of old) and an Irish menu."));
+        placesList.add(new Place("Hargadon Bros", "O'Connell St,", 1, "Lunch at Hargadon's is always buzzing. Dinner is more elaborate but still in the casual dining category and with good value thrown in."));
+        placesList.add(new Place("John Benny Moriarty", "Strand St", 2, "Music and song native to our peninsula. The words and notes of our music passed from generation to generation, father to daughter, mother to son, and in our pub, we offer visitors a glimpse at our rich heritage."));
+        placesList.add(new Place("Murphy's Pub", "Rathmines Rd Upper", 3, "Murphy's Pub with its traditional open fire provides a warm contemporary setting with the character of an Irish bar full of old world charm."));
+        placesList.add(new Place("Molly Mallone's", "Temple Lane", 4, "Great relaxed atmosphere in the heart of Temple Bar., great food, friendly staff . brilliant music."));
+        placesList.add(new Place("McSorleys Old Ale House", "Temple Bar", 5, "Old-time bar with Irish bartenders, 2 kinds of ale (light or dark) & sawdust on the floor."));
+        placesList.add(new Place("The Marylebone", "Marylebone High St,", 6, "Modern pub with extensive cocktail menu using botanical infusions, also serving artisan coffees."));
     }
 
 }

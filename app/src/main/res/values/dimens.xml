@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margin_textview">10dp</dimen>
+    <dimen name="cardview_margin">15dp</dimen>
+    <dimen name="textview_top_margin">15dp</dimen>
+</resources>
