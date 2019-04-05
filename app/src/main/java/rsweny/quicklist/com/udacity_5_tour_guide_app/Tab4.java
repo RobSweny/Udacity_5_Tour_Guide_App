@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Tab3 extends Fragment {
+public class Tab4 extends Fragment {
 
     public View rootView;
     private RestaurantAdapter mAdapter;
@@ -33,7 +33,7 @@ public class Tab3 extends Fragment {
         place_list_recyclerview = getView().findViewById(R.id.place_list_recyclerview);
         background_image = getView().findViewById(R.id.background_image);
 
-        loadRestaurants();
+        loadParks();
 
         mAdapter = new RestaurantAdapter(getContext(), placesList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
@@ -47,18 +47,15 @@ public class Tab3 extends Fragment {
     }
 
     // Loads restaurants
-    private void loadRestaurants() {
+    private void loadParks() {
         placesList.add(new Place(getString(R.string.banyi_japanese_placename), getString(R.string.banyi_japanese_locationname), 0, getString(R.string.banyi_japanese_description)));
         placesList.add(new Place(getString(R.string.elephant_and_castle_placename), getString(R.string.elephant_and_castle_locationname), 1, getString(R.string.elephant_and_castle_description)));
         placesList.add(new Place(getString(R.string.mexico_to_rome_placename), getString(R.string.mexico_to_rome_locationname), 2, getString(R.string.location_description)));
         placesList.add(new Place(getString(R.string.sole_placename), getString(R.string.sole_locationname), 3, getString(R.string.sole_description)));
-        placesList.add(new Place(getString(R.string.the_chameleon_placename), getString(R.string.the_chameleon_locationname), 4, getString(R.string.the_chameleon_description)));
-        placesList.add(new Place(getString(R.string.pachinos_placename), getString(R.string.pachinos_locationname), 5, getString(R.string.pachinos_description)));
-        placesList.add(new Place(getString(R.string.millstone_placename), getString(R.string.millstone_locationname), 6, getString(R.string.millstone_description)));
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_tab3, container, false);
+        return inflater.inflate(R.layout.fragment_tab4, container, false);
     }
 }

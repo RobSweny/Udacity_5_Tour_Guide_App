@@ -49,13 +49,13 @@ public class Tab2 extends Fragment {
 
     // Loads pubs
     private void loadPubs() {
-        placesList.add(new Place("Doheny & Nesbitt", "Baggot Street Lower", 0, "This classic pub houses 2 fine old snugs (small rooms for women in days of old) and an Irish menu."));
-        placesList.add(new Place("Hargadon Bros", "O'Connell St,", 1, "Lunch at Hargadon's is always buzzing. Dinner is more elaborate but still in the casual dining category and with good value thrown in."));
-        placesList.add(new Place("John Benny Moriarty", "Strand St", 2, "Music and song native to our peninsula. The words and notes of our music passed from generation to generation, father to daughter, mother to son, and in our pub, we offer visitors a glimpse at our rich heritage."));
-        placesList.add(new Place("Murphy's Pub", "Rathmines Rd Upper", 3, "Murphy's Pub with its traditional open fire provides a warm contemporary setting with the character of an Irish bar full of old world charm."));
-        placesList.add(new Place("Molly Mallone's", "Temple Lane", 4, "Great relaxed atmosphere in the heart of Temple Bar., great food, friendly staff . brilliant music."));
-        placesList.add(new Place("McSorleys Old Ale House", "Temple Bar", 5, "Old-time bar with Irish bartenders, 2 kinds of ale (light or dark) & sawdust on the floor."));
-        placesList.add(new Place("The Marylebone", "Marylebone High St,", 6, "Modern pub with extensive cocktail menu using botanical infusions, also serving artisan coffees."));
+        placesList.add(new Place(getString(R.string.doheny_and_nesbitt_placename), getString(R.string.doheny_and_nesbitt_locationname), 0, getString(R.string.doheny_and_nesbitt_description)));
+        placesList.add(new Place(getString(R.string.hargadon_bros_placename), getString(R.string.hargadon_bros_locationname), 1, getString(R.string.hargadon_bros_description)));
+        placesList.add(new Place(getString(R.string.john_benny_moriarty_placename), getString(R.string.john_benny_moriarty_locationname), 2, getString(R.string.john_benny_moriarty_description)));
+        placesList.add(new Place(getString(R.string.murphys_pub_placename), getString(R.string.murphys_pub_locationname), 3, getString(R.string.murphys_pub_description)));
+        placesList.add(new Place(getString(R.string.molly_mallone_placename), getString(R.string.molly_mallone_locationname), 4, getString(R.string.molly_mallone_description)));
+        placesList.add(new Place(getString(R.string.mcsorleys_old_ale_house_placename), getString(R.string.mcsorleys_old_ale_house_locationname), 5, getString(R.string.mcsorleys_old_ale_house_description)));
+        placesList.add(new Place(getString(R.string.the_marylebone_placename), getString(R.string.the_marylebone_locationname), 6, getString(R.string.the_marylebone_description)));
     }
 
     @Override

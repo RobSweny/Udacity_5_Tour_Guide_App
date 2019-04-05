@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dublin_street_tab1_background">
+    android:background="@drawable/dublin_street">
 
     <TextView
         android:id="@+id/dublin_textview"
@@ -35,5 +35,4 @@
         android:textColor="@color/orange"
         android:textSize="20sp"
         android:textStyle="bold" />
-
 </RelativeLayout>

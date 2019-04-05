@@ -15,24 +15,23 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.MyViewHolder> {
+public class ShopsAdapter extends RecyclerView.Adapter<ShopsAdapter.MyViewHolder> {
 
     private List<Place> places;
     private Context context;
-    private String restaurants = MainActivity.restaurants;
+    private String shops = MainActivity.shops;
     // 1 = pub, 2 = restaurant, 3 = parks, 4 = shops
-    private int current_place = 2;
+    private int current_place = 4;
 
     private Integer[] placeImages = {
-            R.drawable.restaurant_1,
-            R.drawable.restaurant_2,
-            R.drawable.restaurant_3,
-            R.drawable.restaurant_4,
-            R.drawable.restaurant_5,
-            R.drawable.restaurant_6,
-            R.drawable.restaurant_7
+            R.drawable.pub_1,
+            R.drawable.pub_2,
+            R.drawable.pub_3,
+            R.drawable.pub_4,
+            R.drawable.pub_5,
+            R.drawable.pub_6,
+            R.drawable.pub_7
     };
-
 
     public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView place_textview, location_textview, item_description;
@@ -40,7 +39,6 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.My
         public CardView custom_item;
         private ItemClickListener clickListener;
         public RelativeLayout relative_card_layout;
-
 
         public MyViewHolder(View view) {
             super(view);
@@ -66,7 +64,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.My
         }
     }
 
-    public RestaurantAdapter(Context context, List<Place> places) {
+    public ShopsAdapter(Context context, List<Place> places) {
         this.places = places;
         this.context = context;
     }
@@ -76,7 +74,6 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.My
         final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_item, parent, false);
         return new MyViewHolder(itemView);
     }
-
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
@@ -90,16 +87,13 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.My
         holder.setClickListener(new ItemClickListener() {
             @Override
             public void onClick(View view, int position, boolean isLongClick) {
-                //Toast.makeText(context, "Position: " + String.valueOf(place.placeName), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(context, ItemSelected.class);
                 intent.putExtra(MainActivity.position, position);
-                intent.putExtra(MainActivity.restaurants, restaurants);
+                intent.putExtra(MainActivity.shops, shops);
                 intent.putExtra(MainActivity.current_place, current_place);
-                context.startActivity(intent);
-
             }
         });
-    } // End onBindViewHolder
+    }
 
     @Override
     public int getItemCount() {
@@ -109,6 +103,6 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.My
     public void animate(RecyclerView.ViewHolder viewHolder) {
         final Animation animAnticipateOvershoot = AnimationUtils.loadAnimation(context, R.anim.bounce_interpolator);
         viewHolder.itemView.setAnimation(animAnticipateOvershoot);
-    } // End animate
+    }
 
 }

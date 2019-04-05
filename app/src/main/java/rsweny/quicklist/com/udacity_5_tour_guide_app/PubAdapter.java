@@ -19,8 +19,8 @@ public class PubAdapter extends RecyclerView.Adapter<PubAdapter.MyViewHolder> {
 
     private List<Place> places;
     private Context context;
-    private String pubs = "pubs";
-    // 1 = pub, 2 = restaurant
+    private String pubs = MainActivity.pubs;
+    // 1 = pub, 2 = restaurant, 3 = parks, 4 = shops
     private int current_place = 1;
 
     private Integer[] placeImages = {
@@ -88,9 +88,9 @@ public class PubAdapter extends RecyclerView.Adapter<PubAdapter.MyViewHolder> {
             @Override
             public void onClick(View view, int position, boolean isLongClick) {
                 Intent intent = new Intent(context, ItemSelected.class);
-                intent.putExtra("position", position);
-                intent.putExtra("pubs", pubs);
-                intent.putExtra("current_place", current_place);
+                intent.putExtra(MainActivity.position, position);
+                intent.putExtra(MainActivity.pubs, pubs);
+                intent.putExtra(MainActivity.current_place, current_place);
                 context.startActivity(intent);
             }
         });

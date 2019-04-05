@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/top_image_imageview"
-        android:contentDescription="@string/image_for_pub_or_restaurant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/image_for_pub_or_restaurant"
         android:src="@drawable/pub_1" />
 
     <TextView
@@ -55,5 +55,4 @@
             android:layout_alignParentBottom="true"
             android:text="@string/back" />
     </RelativeLayout>
-
 </LinearLayout>

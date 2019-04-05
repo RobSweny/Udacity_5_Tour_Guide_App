@@ -13,6 +13,18 @@ public class MainActivity extends AppCompatActivity {
     private TextView toolbar_textview;
     private ViewPager viewPager;
 
+    public static final String Home = "Home";
+    public static final String Pubs = "Pubs";
+    public static final String Food = "Food";
+    public static final String Parks = "Parks";
+    public static final String Shops = "Shops";
+    public static final String pubs = "pubs";
+    public static final String shops = "shops";
+    public static final String parks = "parks";
+    public static final String position = "position";
+    public static final String current_place = "current_place";
+    public static final String restaurants = "restaurants";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Passing the user to the second tab from the proceed button
         int defaultValue = 0;
-        int page = getIntent().getIntExtra("TAB", defaultValue);
+        int page = getIntent().getIntExtra(getString(R.string.tab), defaultValue);
         viewPager.setCurrentItem(page);
     }
 }

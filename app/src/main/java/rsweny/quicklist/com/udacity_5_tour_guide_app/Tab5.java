@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Tab3 extends Fragment {
+public class Tab5 extends Fragment {
 
     public View rootView;
     private RestaurantAdapter mAdapter;
@@ -59,6 +59,6 @@ public class Tab3 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_tab3, container, false);
+        return inflater.inflate(R.layout.fragment_tab5, container, false);
     }
 }

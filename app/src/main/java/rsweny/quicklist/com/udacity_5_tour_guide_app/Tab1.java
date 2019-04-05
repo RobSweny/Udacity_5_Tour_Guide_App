@@ -55,7 +55,7 @@ public class Tab1 extends Fragment {
                         if (duration > 1000) {
                             int page = 1;
                             Intent intent = new Intent(getActivity(), MainActivity.class);
-                            intent.putExtra("TAB", page);// One is your argument
+                            intent.putExtra(getString(R.string.tab), page);// One is your argument
                             startActivity(intent);
                         }
 
