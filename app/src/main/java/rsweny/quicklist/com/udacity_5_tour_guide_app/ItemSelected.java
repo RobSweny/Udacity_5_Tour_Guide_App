@@ -52,10 +52,10 @@ public class ItemSelected extends AppCompatActivity {
     };
 
     private Integer[] shopImages = {
-            R.drawable.st_annes_park,
-            R.drawable.stephens_green,
-            R.drawable.cabinteely_park,
-            R.drawable.pheonix_park
+            R.drawable.shops_1,
+            R.drawable.shops_2,
+            R.drawable.shops_3,
+            R.drawable.shops_4
     };
 
     @Override
@@ -137,7 +137,7 @@ public class ItemSelected extends AppCompatActivity {
         } else if (current_place == 3) {
             top_image_imageview.setImageResource(parkImages[position]);
         } else if (current_place == 4)  {
-                    top_image_imageview.setImageResource(shopImages[position]);
+             top_image_imageview.setImageResource(shopImages[position]);
         } // Check which activity to go back too
 
         description_textview.setText(placesList.get(position).getPlaceDescription());
@@ -145,18 +145,18 @@ public class ItemSelected extends AppCompatActivity {
 
     // Loads parks
     private void loadParks() {
-        placesList.add(new Place("a", "a", 0, "a"));
-        placesList.add(new Place("a", "a", 1, "a"));
-        placesList.add(new Place("a", "a", 2, "a"));
-        placesList.add(new Place("a", "a", 3, "a"));
+        placesList.add(new Place(getString(R.string.st_annes_park_placename), getString(R.string.st_annes_park_locationname), 0, getString(R.string.st_annes_park_description)));
+        placesList.add(new Place(getString(R.string.stephens_green_placename), getString(R.string.stephens_green_locationname), 1, getString(R.string.stephens_green_description)));
+        placesList.add(new Place(getString(R.string.cabinteely_park_placename), getString(R.string.cabinteely_park_locationname), 2, getString(R.string.cabinteely_park_description)));
+        placesList.add(new Place(getString(R.string.phoenix_park_placename), getString(R.string.phoenix_park_locationname), 3, getString(R.string.phoenix_park_description)));
     }
 
     // Loads shops
     private void loadShops() {
-        placesList.add(new Place("a", "a", 0, "a"));
-        placesList.add(new Place("a", "a", 1, "a"));
-        placesList.add(new Place("a", "a", 2, "a"));
-        placesList.add(new Place("a", "a", 3, "a"));
+        placesList.add(new Place(getString(R.string.blanchardstown_placename), getString(R.string.blanchardstown_locationname), 0, getString(R.string.blanchardstown_description)));
+        placesList.add(new Place(getString(R.string.ilac_centre_placename), getString(R.string.ilac_centre_locationname), 1, getString(R.string.ilac_centre_description)));
+        placesList.add(new Place(getString(R.string.jervis_centre_placename), getString(R.string.jervis_centre_locationname), 2, getString(R.string.jervis_centre_description)));
+        placesList.add(new Place(getString(R.string.stephens_green_shop_placename), getString(R.string.stephens_green_shop_locationname), 3, getString(R.string.stephens_green_shop_description)));
     }
 
     // Loads restaurants

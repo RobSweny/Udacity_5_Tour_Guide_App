@@ -18,7 +18,7 @@ import java.util.List;
 public class Tab4 extends Fragment {
 
     public View rootView;
-    private RestaurantAdapter mAdapter;
+    private ParksAdapter mAdapter;
     private ListView listingsView;
     private List<Place> places;
     private List<Place> placesList = new ArrayList<>();
@@ -35,7 +35,7 @@ public class Tab4 extends Fragment {
 
         loadParks();
 
-        mAdapter = new RestaurantAdapter(getContext(), placesList);
+        mAdapter = new ParksAdapter(getContext(), placesList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         place_list_recyclerview.setLayoutManager(mLayoutManager);
         place_list_recyclerview.setAdapter(mAdapter);
@@ -48,10 +48,10 @@ public class Tab4 extends Fragment {
 
     // Loads restaurants
     private void loadParks() {
-        placesList.add(new Place(getString(R.string.banyi_japanese_placename), getString(R.string.banyi_japanese_locationname), 0, getString(R.string.banyi_japanese_description)));
-        placesList.add(new Place(getString(R.string.elephant_and_castle_placename), getString(R.string.elephant_and_castle_locationname), 1, getString(R.string.elephant_and_castle_description)));
-        placesList.add(new Place(getString(R.string.mexico_to_rome_placename), getString(R.string.mexico_to_rome_locationname), 2, getString(R.string.location_description)));
-        placesList.add(new Place(getString(R.string.sole_placename), getString(R.string.sole_locationname), 3, getString(R.string.sole_description)));
+        placesList.add(new Place(getString(R.string.st_annes_park_placename), getString(R.string.st_annes_park_locationname), 0, getString(R.string.st_annes_park_description)));
+        placesList.add(new Place(getString(R.string.stephens_green_placename), getString(R.string.stephens_green_locationname), 1, getString(R.string.stephens_green_description)));
+        placesList.add(new Place(getString(R.string.cabinteely_park_placename), getString(R.string.cabinteely_park_locationname), 2, getString(R.string.cabinteely_park_description)));
+        placesList.add(new Place(getString(R.string.phoenix_park_placename), getString(R.string.phoenix_park_locationname), 3, getString(R.string.phoenix_park_description)));
     }
 
     @Override

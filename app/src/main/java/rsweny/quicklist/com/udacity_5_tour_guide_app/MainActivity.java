@@ -13,6 +13,11 @@ public class MainActivity extends AppCompatActivity {
     private TextView toolbar_textview;
     private ViewPager viewPager;
 
+    // Recommendation for resubmission
+    // "You can store these keys in a constant class so that you can use them by calling the members of that class.
+    // It will reduce the chances of errors due to typing mistakes."
+
+    // I can't store these in strings.xml as they are static, if there is a work around for this please let me know.
     public static final String Home = "Home";
     public static final String Pubs = "Pubs";
     public static final String Food = "Food";

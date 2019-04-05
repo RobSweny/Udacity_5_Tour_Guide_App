@@ -2,6 +2,7 @@ package rsweny.quicklist.com.udacity_5_tour_guide_app;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -38,7 +39,7 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.My
         public TextView place_textview, location_textview, item_description;
         public ImageView background_image;
         public CardView custom_item;
-        private ItemClickListener clickListener;
+        public ItemClickListener clickListener;
         public RelativeLayout relative_card_layout;
 
 
@@ -66,20 +67,21 @@ public class RestaurantAdapter extends RecyclerView.Adapter<RestaurantAdapter.My
         }
     }
 
-    public RestaurantAdapter(Context context, List<Place> places) {
+    RestaurantAdapter(Context context, List<Place> places) {
         this.places = places;
         this.context = context;
     }
 
+    @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_item, parent, false);
         return new MyViewHolder(itemView);
     }
 
 
     @Override
-    public void onBindViewHolder(final MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
         final Place place = places.get(position);
 
         holder.place_textview.setText(place.placeName);

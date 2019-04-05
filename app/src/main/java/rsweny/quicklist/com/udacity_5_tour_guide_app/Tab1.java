@@ -3,6 +3,7 @@ package rsweny.quicklist.com.udacity_5_tour_guide_app;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -70,7 +71,7 @@ public class Tab1 extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootViewB = inflater.inflate(R.layout.fragment_tab1, container, false);
         rootView = rootViewB;
         return rootViewB;
